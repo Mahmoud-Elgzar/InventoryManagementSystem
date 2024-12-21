@@ -9,7 +9,7 @@ public class Inventory {
     private final List<Observer> observers = new ArrayList<>();
     private List<Product> products;
 
-    public Inventory() { }
+    private Inventory() { }
 
     public static Inventory getInstance() {
         if (instance == null) {

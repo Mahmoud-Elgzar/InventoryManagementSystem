@@ -22,6 +22,8 @@ public class DiscountedProduct extends ProductDecorator {
 
     @Override
     public void displayDetails() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            product.displayDetails();
+    System.out.println("Discount Rate: " + (discountRate * 100) + "%");
+    System.out.println("Discounted Price: $" + getPrice());
     }
 }
